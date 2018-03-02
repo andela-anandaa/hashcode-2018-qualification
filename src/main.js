@@ -49,7 +49,7 @@ class Fleet {
   }
 
   takeRide(ride, currentStep) {
-    log(`Step ${currentStep}: Fleet ${this.index} take ride ${ride.index}`);
+    log(`Step ${currentStep}: Fleet ${this.index} assigned (take) ride ${ride.index}`);
     this.currentRide = ride;
     this.rides.push(ride.index);
     ride.takeRide(this);
